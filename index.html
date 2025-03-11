@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask a Question</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        form { max-width: 400px; margin: auto; }
+        input, textarea { width: 100%; margin-bottom: 10px; padding: 10px; }
+        button { padding: 10px 20px; }
+    </style>
+</head>
+<body>
+    <h2>Ask a Question</h2>
+    <form action="submit_question.php" method="post">
+        <input type="text" name="username" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="question" placeholder="Type your question here..." required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p><a href="questions.php">View Submitted Questions</a></p>
+</body>
+</html>
